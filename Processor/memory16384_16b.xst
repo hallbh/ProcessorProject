@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/hilliara/Documents/School/CSSE/CSSE232/Processor/Repo/Implementation/Processor/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/hilliara/Documents/School/CSSE/CSSE232/Processor/Repo/Implementation/Processor/xst"
+elaborate
+-ifn memory16384_16b.prj
+-ifmt mixed

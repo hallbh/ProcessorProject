@@ -1,0 +1,16 @@
+Note of Changes from M1 to M2:
+
+	Instructions:
+		Instructions are now 16 bits long instead of 24 bits long and have an 8 bit opcode and 8 bit immediate.
+
+		We plan to make I-type instructions have 4 bit opcode and 8 bit immediates. 
+		The S-type instructions may be split up into different types, but would all have a 4 bit opcode, which is the same for all of their respective type instructions. However, 			each type of instructions would also have func to differentiate inside of the type. S-type instructions could be split up into S-type(stack), A-type(ALU), and J-type(jump).
+
+
+		jeq and jneq have been replaced with jez and jnez, which just compare an immediate with 0. jeq and jneq can be implemented as pseudoinstructions using sub and jez or jnez.
+		not has been replaced with bnor, which is a bitwise not or. Not can be made a pseudoinstruction using bnor and comparing the immediate with 0.
+
+	Binary and Hex:
+		Changed opcodes of instructions from binary to hex.
+		Fixed machine code for euclid's algorithm and relprime because some opcodes changed when we edited instructions.
+		
